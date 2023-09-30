@@ -1,27 +1,14 @@
-BEGIN:VCALENDAR                                  # 日历开始
-PRODID:-//test.us//iCalendar Event//EN           # 软件信息
-VERSION:2.0                                      # 遵循的 iCalendar 版本号
-CALSCALE:GREGORIAN                               # 历法：公历
-METHOD:PUBLISH                                   # 方法：公开 也可以是 REQUEST 等用于日历间的信息沟通方法
-CLASS:PUBLIC                                     # Classification 此属性定义日历组件的访问分类: "PUBLIC" / "PRIVATE" / "CONFIDENTIAL" / iana-token / x-name
-BEGIN:VTIMEZONE                                  # Time Zone Component
-TZID:Asia/Shanghai                               # Time Zone Identifier 时区标识符
-TZURL:http://tzurl.org/zoneinfo-outlook/Asia/Shanghai            # Time Zone URL: 访问 http://tzurl.azureedge.net/zoneinfo-outlook/Asia
-X-LIC-LOCATION:Asia/Shanghai
-BEGIN:STANDARD
-TZOFFSETFROM:+0800
-TZOFFSETTO:+0800
-TZNAME:CST
-DTSTART:19700101T000000
-END:STANDARD
-END:VTIMEZONE                                     # 时区组件结束
+BEGIN:VCALENDAR
+PRODID:-//Chen Wei//Chinese Lunar Calendar//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
 
-BEGIN:VEVENT                                      # 事件开始
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20231008
 DTEND;VALUE=DATE:20231008
 SUMMARY:寒露
 UID:MYIcs_202301                                                                                      
-END:VEVENT    
+END:VEVENT            
 
-                                                                   
 END:VCALENDAR
